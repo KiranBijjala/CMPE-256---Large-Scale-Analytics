@@ -1,36 +1,16 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <!DOCTYPE html>
 
 
-<html>
- <head>
-  <title>Please Click on Find Recommendation to get more relavent papers</title>
-
- </head>
- <body>
-   <h1>Please Click on Find Recommendation to get the search result for UserId -{{first_name}}</h1>
-    <div class="container">
-   <div class="table-responsive">
-    <br />
-    <div align="center">
-     <button type="button" name="load_data" id="load_data" class="btn btn-info">Find Recommendation</button>
-    </div>
-    <br />
-    <div id="Student_table">
-    </div>
-   </div>
-  </div>
-
- </body>
-</html>
 
 <script>
 $(document).ready(function(){
  $('#load_data').click(function(){
   $.ajax({
-   url:"static/user_rec.csv",
+   url:"static/user_rec1.csv",
    dataType:"text",
    success:function(data)
    {
@@ -63,4 +43,50 @@ $(document).ready(function(){
  
 });
 </script>
+
+
+<style>
+h2{
+     color: black; 
+  font-family: "arial";
+  font-size: 1.5em;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: animtext 4s steps(80, end); 
+   transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+@keyframes animtext { 
+  from {
+      width: 0;
+     transition: all 2s ease-in-out;
+  } 
+}
+</style>
+<html>
+ <head>
+  <title>Please Click on "Find Recommendation" to get more relavent papers</title>
+
+ </head>
+ <body>
+ <div class="container">
+	<div class="row">
+   <h2>Please Click on Find Recommendation to get the search result for UserId -{{first_name}}</h2>
+	</div>
+</div>
+    <div class="container">
+   <div class="table-responsive">
+    <br />
+    <div align="center">
+     <button type="button" name="load_data" id="load_data" class="btn btn-info">Find Recommendation</button>
+    </div>
+    <br />
+    <div id="Student_table">
+    </div>
+   </div>
+  </div>
+
+ </body>
+</html>
 
