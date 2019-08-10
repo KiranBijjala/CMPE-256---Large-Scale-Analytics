@@ -26,7 +26,7 @@ paper_id  8809 title  Examining the Impact of Platform Properties on Quality Att
 ```
 
 # Content-Based Filtering:
-The result from collaborative filtering is then fed to a content-based filtering model where the the recommendations are further filtering using content of the item, i.e titles and summary of the paper. In content based filtering , the data is tokenized in the form of words by removing stopwords and then performing stemming on the data. The resultant preprocessed data is then vectorized using TF-IDF vectorization and Tf, Idf vectors for all the papers are generated. The user query is also tokenized and Tf-Idf vector is generated. The similairty between user query and papers is then found by using cosine similarity between Tf-Idf vectors of user query and papers. In this way, Top-n papers are recommended based on the similarity scores of query and the papers in the data.
+In content based filtering , We have only considered summary of all the papers which can be used for recommendation.So, the data is tokenized in the form of words by removing stopwords and then performing stemming on the data. The resultant preprocessed data is then vectorized using TF-IDF vectorization and Tf, Idf vectors for all the papers are generated. The user query is also tokenized and Tf-Idf vector is generated. The similairty between user query and papers is then found by using cosine similarity between Tf-Idf vectors of user query and papers. In this way, Top-n papers are recommended based on the similarity scores of query and the papers in the data.
 
 Top 10 recommendations when query is taken as 'Neural Network' is shown below.
 ```
@@ -44,4 +44,6 @@ Top 10 recommendations when query is taken as 'Neural Network' is shown below.
 0.054169332929043475 Scientific Collaborations: principles of WikiBridge Design
 ```
 
+# Hybrid Recommendation system:
 
+In Hybrid RS, The result from collaborative filtering is then fed to the content based filtering model as an argument. So, the recommendations from the collaborative filtering are further filtered using cosine similarity of the user query and the sumamry of the papers.
