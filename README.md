@@ -48,7 +48,7 @@ Top 10 recommendations when query is taken as 'Neural Network' is shown below.
 
 In Hybrid RS, The result from collaborative filtering is then fed to the content based filtering model as an argument. So, the recommendations from the collaborative filtering are further filtered using cosine similarity of the user query and the sumamry of the papers.
 
-#Deep Learning Recommendation system:
+# Deep Learning Recommendation system:
 
 In deep learning approach, the dataset is split into train and test model. The model learns hidden features from historic data and gives recommendations.
 Top 10 recommendations when the query is 'Dynamic Benchmarking' is shown below:
