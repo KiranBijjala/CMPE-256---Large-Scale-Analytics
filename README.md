@@ -47,3 +47,21 @@ Top 10 recommendations when query is taken as 'Neural Network' is shown below.
 # Hybrid Recommendation system:
 
 In Hybrid RS, The result from collaborative filtering is then fed to the content based filtering model as an argument. So, the recommendations from the collaborative filtering are further filtered using cosine similarity of the user query and the sumamry of the papers.
+
+#Deep Learning Recommendation system:
+
+In deep learning approach, the dataset is split into train and test model. The model learns hidden features from historic data and gives recommendations.
+Top 10 recommendations when the query is 'Dynamic Benchmarking' is shown below:
+```
+2297 AI Plan Recognition in Stories and in Life
+6470 NE Guided macro-mutation in a graded energy based genetic algorithm for protein structure prediction
+11096 SE Efficiently Manifesting Asynchronous Programming Errors in Android Apps
+8206 SE IceCube's Development Environment
+1081 AI Decision-Theoretic Planning with non-Markovian Rewards
+14552 DB Annex: Radon - Rapid Discovery of Topological Relations
+1380 AI Methods for computing state similarity in Markov Decision Processes
+6358 CV Comparisons of wavelet functions in QRS signal to noise ratio enhancement and detection accuracy
+2922 AI An argumentation system for reasoning with conflict-minimal paraconsistent ALC
+2674 AI A Computational Model of Two Cognitive Transitions Underlying Cultural Evolution
+```
+
